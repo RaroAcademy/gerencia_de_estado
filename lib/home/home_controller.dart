@@ -7,7 +7,6 @@ class HomeController extends Controller<HomeStatus> {
 
   Future<void> login() async {
     update(HomeStatus.loading);
-    final a = state;
     await Future.delayed(Duration(seconds: 3));
     update(HomeStatus.success);
   }
